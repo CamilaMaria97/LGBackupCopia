@@ -563,7 +563,7 @@ div#loginError{
     top: 0;
     height: 100vh;
     width:  100vw;
-    background-image: img/initScreen.png;
+    background-image: '../img/initScreen.png';
   	background-repeat: repeat-y;
     overflow: hidden;
     z-index: 9;
