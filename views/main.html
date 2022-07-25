@@ -1,0 +1,97 @@
+<div id="move-container" class="move-container">
+	<div class="logo">
+    	<img alt="ÑÑTV" src="img/nnlogo.png">
+	</div>
+    <!-- OVERVIEW -->
+    <div class="overview">
+        <div class="font-header"></div>
+    </div>
+    
+    <!-- page: INDEX (OVERVIEW) -->
+    <div class="depth1 page hide">
+        <div class="overview desc font-body"></div>
+    </div>
+</div>
+
+<!-- Login formulario -->
+<div id="centralWrapper" class="col align-self-center">
+	<div class="leftSpacing"></div>
+	<!-- Confirm Exit Dialog -->
+	 <div id="exitDialog" class="caph-dialog depth3 hide">
+	     <div class="caph-dialog-title"> Salir de la aplicacion </div>
+	     <div class="caph-dialog-buttons" button-type="confirm"></div>
+	 </div>
+	 <!-- Login formulario -->
+	 <div id="loginForm" class="depth1 formWrapper">
+		
+		 	<h2 class="formLabel left">Usuarios registrados</h2>
+			<table border-collapse='5px' border-spacing="5px">
+				<tr>
+					<th class="formLabel">Email</th>
+					<td align='left'>
+						<input focusable id="email" class="inputText">
+					</td>
+				</tr>
+				<tr>
+					<th class="formLabel">Password</th>
+					<td align='left'>
+						<!-- <input focusable id="password" class="inputText" value="2018"> -->
+						<input focusable id="password" class="inputText">
+					</td>
+				</tr>
+			</table>
+			
+			<input focusable id="loginBtn" class="btn" value="Login" readonly="readonly">
+			<br><br>
+			<div id="loginError">
+				<p class="errorMsg">
+			</div> 
+	 </div>
+</div>
+<!-- page: INDEX (LIST) -->
+<div id="listWrapper" class="depth2 list-wrapper page hide">
+    <div id="list-category" class="list-category col align-self-center" style="transform: translate3d(0, 0, 0)">
+        <div class="col align-self-center">
+	        <div class="list-area">
+	            <div class="title-list font-label">Lista de Canales</div>
+	            <div id="category_4" title="Canales"></div>
+	        </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="caphPlayer" id="player" class="depth4 player hide">
+<!-- Tag video <object id="av-player" type="application/avplayer" style="position:absolute; left:0px; top:0px; width: 1920px; height: 1080px; zindex:999"></object>-->
+    <video id="av-player" type="application/avplayer" poster="img/initScreen.png" style="position:fixed;left:0px;top:0px;height: 100vh;width: 100vw; zindex:999"></video>
+    <div class="channelNumberSelection hide">
+    	<h1></h1>
+    	<h2></h2>
+    </div>
+</div> 
+<!--- Boton de salir en la pagina de inicio-->
+<div class="boton-salir">
+	<a href="login.html" class="btn-salir">
+		<span id="span1"></span>
+		<span id="span2"></span>
+		<span id="span3"> </span>
+		<span id="span4"></span>
+		Salir
+	</a>
+		
+</div>
+
+<!--- Lista de canales-->
+<script id="channelList" type="text/template">
+    	<div id="<%=item.serviceId%>" class="item" focusable data-index="<%= index %>" on-focused="focus($event, CATEGORY.RELATED_PLAY_LIST, this)" on-selected="selected($event, CATEGORY.RELATED_PLAY_LIST, this,$index)">
+        	<div class="loader <%=(!item.loaded)?'hide':'' %>"></div>
+        	<div class="content" style="background: url('http://154.62.74.21/logos/14925/<%= item.logicalChannel %>.png');-webkit-background-size:100% 100%;">
+            	<div class="text font-label">
+            	<div class="font-info"><%=item.description%></div>
+        	</div>
+    	</div>
+</script>
+
+
+
+

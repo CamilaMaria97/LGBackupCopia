@@ -1,0 +1,11 @@
+{
+    "vendor": "Britel",
+    "largeIcon": "largeIcon.png",
+    "iconColor": "#ffffff",
+    "icon": "icon.png",
+    "main": "index.html",
+    "id": "com.britel.nntv.app",
+    "title": "NNTV",
+    "type": "web",
+    "version": "2.1.3"
+}

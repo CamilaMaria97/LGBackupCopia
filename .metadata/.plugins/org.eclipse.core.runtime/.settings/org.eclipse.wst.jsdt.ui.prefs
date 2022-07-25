@@ -1,0 +1,14 @@
+content_assist_autoinsert=false
+content_assist_category_order=com.webos.ide.content.assist.enyoCategory\:65535\u0000org.eclipse.wst.jsdt.ui.templateProposalCategory\:65536\u0000org.eclipse.wst.jsdt.ui.javaNoTypeProposalCategory\:65537\u0000org.eclipse.wst.jsdt.ui.textProposalCategory\:65538\u0000
+content_assist_disabled_computers=org.eclipse.wst.jsdt.ui.spellingProposalCategory\u0000org.eclipse.wst.jsdt.ui.textProposalCategory\u0000org.eclipse.wst.jsdt.ui.templateProposalCategory\u0000
+content_assist_sorter=com.webos.ide.content.assist.enyoProposalSorter
+eclipse.preferences.version=1
+fontPropagated=true
+org.eclipse.jface.textfont=1|Monospace|10.0|0|GTK|1|;
+org.eclipse.wst.jsdt.ui.editor.tab.width=
+org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
+org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+tabWidthPropagated=true
+useAnnotationsPrefPage=true
+useQuickDiffPrefPage=true
