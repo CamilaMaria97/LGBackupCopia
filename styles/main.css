@@ -406,8 +406,10 @@ div#loginError{
     width: 320px; 
     height: 200px;
     -webkit-box-sizing: border-box;
-    margin: 0 14px 0 0;
-    border: 5px solid rgb(10, 4, 37);
+    margin: 20px;
+    border: 15px solid transparent;
+    box-shadow: 0 5px 35px rgba(0, 0, 0, 0.08);
+    /* border: 5px solid transparent; */
 }
 
 .text.font-label{
@@ -452,8 +454,18 @@ div#loginError{
     background: linear-gradient(to top, #000, transparent);
 }
 
+.item.focused:first-child{
+    box-shadow: 0px 0px 10px #000000;
+    z-index: 2;
+    transition: all 300ms ease-in;
+    transform: scale(1.1);
+}
+
 .item.focused {
-    border: 4px solid white;
+    box-shadow: 0px 0px 10px #000000;
+    z-index: 2;
+    transition: all 300ms ease-in;
+    transform: scale(1.1);
 }
 
 .item-blank.focused {
