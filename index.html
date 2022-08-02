@@ -22,6 +22,22 @@
 	<script type="text/javascript" src="lib/caph/3.1.0/caph-jquery.min.js"></script>
 	<script type="text/javascript" src="webOSTVjs-1.1.0/webOSTV.js"></script>		
 </head>
+<script src="https://luke-chang.github.io/js-spatial-navigation/spatial_navigation.js"></script>
+  <!-- If the resource load fails, download the file and load it as below. -->
+  <!-- <script src="./src/spatial_navigation.js"></script> -->
+  <script src="./src/eventListeners.js"></script>
+  <script>
+    window.addEventListener('load', function() {
+      SpatialNavigation.init();
+      SpatialNavigation.add({
+        selector: '.item'
+      });
+      SpatialNavigation.makeFocusable();
+      
+      addEventListeners();
+    });
+</script>
+
 	<body>
 		<!-- Aparece al cargar la pantalla inicial -->
 
